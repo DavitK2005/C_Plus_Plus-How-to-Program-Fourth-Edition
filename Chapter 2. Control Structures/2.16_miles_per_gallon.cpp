@@ -35,5 +35,10 @@ int main() {
 			}
 		}
 	}
-	std::cout << overall_miles / overall_gallons;
+	if (overall_gallons != 0){
+		std::cout << overall_miles / overall_gallons;
+	}
+	else {
+		std::cout << "Error";
+	}
 }
