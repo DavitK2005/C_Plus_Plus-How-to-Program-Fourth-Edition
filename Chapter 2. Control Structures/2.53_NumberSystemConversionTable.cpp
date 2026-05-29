@@ -13,18 +13,18 @@ int main() {
 		std::setw(15) << "Hexadecimal" << 
 		std::endl;
 
-	for (int i{ 1 }; i <= 256; i++) {
-		std::cout << std::setw(10) << i;
+	for (int number{ 1 }; number <= 256; number++) {
+		std::cout << std::setw(10) << number;
 
-		int n = i;
+		int copyOfTheNumber = number;
 		std::string binary = {""};
-		while (n > 0) {
-				binary = char((n % 2) + '0') + binary;
-				n = n / 2;
+		while (copyOfTheNumber > 0) {
+				binary = char((copyOfTheNumber % 2) + '0') + binary;
+				copyOfTheNumber = copyOfTheNumber / 2;
 			}
 		std::cout << std::setw(10) << binary <<
-			std::setw(10) << std::oct << i <<
-			std::setw(15) << std::hex << std::uppercase << i;
+			std::setw(10) << std::oct << number <<
+			std::setw(15) << std::hex << std::uppercase << number;
 		std::cout << std::dec << std::endl;
 	}
 }
