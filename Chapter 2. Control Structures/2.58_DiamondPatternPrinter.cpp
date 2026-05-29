@@ -9,10 +9,10 @@ int main() {
 		int spaces = 5 - row;
 		int stars = 2 * row - 1;
 
-		for (int i{ 0 }; i < spaces; i++) {
+		for (int counter{ 0 }; counter < spaces; counter++) {
 			std::cout << ' ';
 		}
-		for (int j{}; j < stars; j++) {
+		for (int column{}; column < stars; column++) {
 			std::cout << '*';
 		}
 		std::cout << std::endl;
@@ -21,10 +21,10 @@ int main() {
 		int spaces = 5 - row;
 		int stars = 2 * row - 1;
 
-		for (int i{ 0 }; i < spaces; i++) {
+		for (int counter{ 0 }; counter < spaces; counter++) {
 			std::cout << ' ';
 		}
-		for (int j{}; j < stars; j++) {
+		for (int column{}; column < stars; column++) {
 			std::cout << '*';
 		}
 		std::cout << std::endl;
