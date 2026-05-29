@@ -7,41 +7,41 @@ side by side by making clever use of nested for loops.]*/
 #include <iostream>
 
 int main() {
-/*	for (int i{1}; i <= 10; ++i) {
-		for (int j{1}; j <= 10; ++j) {
-			if (j <= i) {
+/*	for (int row{1}; row <= 10; ++row) {
+		for (int column{1}; column <= 10; ++column) {
+			if (column <= row) {
 				std::cout << '*';
 			}
 		}
 		std::cout << std::endl;
 	}*/
 /*
-	for (int i{ 1 }; i <= 10; i++) {
-		for (int j{ 10 }; j >= 1; j--) {
-			if (j >= i) {
+	for (int row{ 1 }; row <= 10; row++) {
+		for (int column{ 10 }; column >= 1; column--) {
+			if (column >= row) {
 				std::cout << '*';
 			}
 		}
 	std::cout << std::endl;
 	}*/
-	/*for (int i{ 1 }; i <= 10; i++) {
-		int counter{ i };
-		for (counter; counter >= 2; counter--) {
+	/*for (int row{ 1 }; row <= 10; row++) {
+		int space{ row };
+		for (space; space >= 2; space--) {
 				std::cout << ' ';
 		}
-		for (int j{ 10 }; j >= 1; j--) {
-			if (j >= i) {
+		for (int column{ 10 }; column >= 1; column--) {
+			if (column >= row) {
 				std::cout << '*';
 			}
 		}
 		std::cout << std::endl;
 	}*/
-	for (int i{ 1 }; i <= 10; i++) {
-		for (int k{ 10 }; k >= i; k--) {
+	for (int row{ 1 }; row <= 10; row++) {
+		for (int space{ 10 }; space >= row; space--) {
 			std::cout << ' ';
 		}
-		for (int j{ 1 }; j <= 10; j++) {
-			if (j <= i) {
+		for (int column{ 1 }; column <= 10; column++) {
+			if (column <= row) {
 				std::cout << '*';
 			}
 		}
