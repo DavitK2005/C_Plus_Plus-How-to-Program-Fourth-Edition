@@ -9,14 +9,14 @@ I + 3 * 10 + 2 * 100. The decimal equivalent of binary 1 1 01 is I * I + 0 * 2 +
 #include <string>
 
 int main() {
-	std::string input{};
+	std::string binaryInteger{};
 	
 	std::cout << "Enter a binary number (1 or 0)";
-	std::cin >> input;
+	std::cin >> binaryInteger;
 
 	int decimal{};
 
-	for (char ch : input) {
+	for (char ch : binaryInteger) {
 		decimal = decimal * 2 + (ch - '0');
 	}
 	std::cout << decimal;
