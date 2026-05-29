@@ -7,20 +7,20 @@ where the 5 indicates that the subsequent 5 values are to be summed.*/
 #include <iostream>
 
 int main() {
-	int n{};
+	int quantityOfNumbers{};
 
 	std::cout << "Enter a quantity of numers: ";
-	std::cin >> n;
+	std::cin >> quantityOfNumbers;
 
 	int counter{};
 	int number{};
 	int sum{};
-	for (;counter < n;)
+	for (;counter < quantityOfNumbers;)
 	{
 		std::cout << "Enter a number: ";
 		std::cin >> number;
 		sum += number;
 		counter++;
 	}
-	std::cout << "The quantity of numbers is: " << n << std::endl << "The sum of sequence is: " << sum;
+	std::cout << "The quantity of numbers is: " << quantityOfNumbers << std::endl << "The sum of sequence is: " << sum;
 }
