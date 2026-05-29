@@ -5,11 +5,11 @@ problems for which there is no known algorithmic approach other than sheer brute
 #include <iostream>
 
 int main() {
-	for (int i{ 1 }; i <= 500; i++) {
-		for (int j{ 1 }; j <= 500; j++) {
-			for (int k{ 1 }; k <= 500; k++) {
-				if ((k * k) == (i * i) + (j * j)) {
-					std::cout << "Side a is: " << i << "\t" << "Side b is: " << j << "\t" << "hypotenuse is: " << k << std::endl;
+	for (int sideA{ 1 }; sideA <= 500; sideA++) {
+		for (int sideB{ 1 }; sideB <= 500; sideB++) {
+			for (int sideC{ 1 }; sideC <= 500; sideC++) {
+				if ((sideC * sideC) == (sideA * sideA) + (sideB * sideB)) {
+					std::cout << "Side a is: " << sideA << "\t" << "Side b is: " << sideB << "\t" << "hypotenuse is: " << sideC << std::endl;
 				}
 			}
 		}
