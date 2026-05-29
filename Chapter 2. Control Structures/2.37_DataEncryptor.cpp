@@ -15,16 +15,16 @@ the encrypted integer.Write a separate program that inputs an encrypted four - d
 
 
 int main() {
-	int input{};
+	int data{};
 
 	std::cout << "Enter a number: ";
-	std::cin >> input;
+	std::cin >> data;
 
 	int digits[4]{};
 
 	for (int i{ 3 }; i >= 0; i--) {
-		digits[i] = input % 10;
-		input = input / 10;
+		digits[i] = data % 10;
+		data = data / 10;
 	}
 
 	for (int i{}; i < 4; i++) {
@@ -47,16 +47,16 @@ int main() {
 #include <algorithm>
 
 int main() {
-	int input{};
+	int data{};
 
 	std::cout << "Enter a number: ";
-	std::cin >> input;
+	std::cin >> data;
 
 	int digits[4]{};
 
 	for (int i{ 3 }; i >= 0; i--) {
-		digits[i] = input % 10;
-		input = input / 10;
+		digits[i] = data % 10;
+		data = data / 10;
 	}
 	std::swap(digits[0], digits[2]);
 	std::swap(digits[1], digits[3]);
